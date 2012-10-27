@@ -9,7 +9,7 @@ class Nest_admin extends CI_Controller{
         $this->load->library('session');
 
 		$this->load->library('nestlib');
-		$newNest = $this->nestlib->auth('hostetcl@gmail.com', 'testtest1', true);
+		$newNest = $this->nestlib->auth('user@gmail.com', 'testtest1', true);
 		$this->nestlib->getStats();
     }
 
