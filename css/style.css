@@ -1,0 +1,378 @@
+html{
+	background: url('../images/bg.jpg') repeat #E1F0F6;
+}
+
+body {
+    margin: 20px;
+    font-family: Lucida Grande, Verdana, Sans-serif;
+    font-size: 14px;
+    color: #4F5155;
+}
+
+a {
+    color: #003399;
+    background-color: transparent;
+    font-weight: normal;
+}
+
+h1 {
+    color: #444;
+    background-color: transparent;
+    border-bottom: 1px solid #D0D0D0;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 24px 0 2px 0;
+    padding: 5px 0 6px 0;
+}
+
+#code, .code {
+    font-family: Monaco, Verdana, Sans-serif;
+    font-size: 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #D0D0D0;
+    color: #002166;
+    display: block;
+    margin: 14px 0 14px 0;
+    padding: 12px 10px 12px 10px;
+}
+
+form {
+    padding: 0;
+    margin: 0;
+}
+
+.success, .error{
+    border: 3px solid green;
+    background: #3db23d;
+    padding: 5px;
+    text-align: center;
+    font: bold 12pt Helvetica,Arial,sans-serif;
+    color: #ffffff;
+}
+
+.error{
+    border: 3px solid red;
+    background: #ff7272;
+}
+
+.deviceContainer{
+	position: relative;
+	border-radius: 16px;
+	width: 660px;
+
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	color: #444;
+	
+
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+.innerContainer{
+	border-radius: 8px;
+	background-color: #F5F5F5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FCFCFC), to(#F5F5F5));
+	background: -moz-linear-gradient(top,  #FCFCFC,  #F5F5F5);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	border: 1px solid #CCCCCC;
+	padding: 8px;
+}
+
+.containerWarming{
+	background: -webkit-gradient(linear, left top, left bottom, from(#fe9a49), to(#ff2200));
+	/*background: -webkit-gradient(linear, left top, left bottom, from(#fcd7b8), to(#ff998a));*/
+	border: 1px solid #8f564d; /* #a15900;*/
+}
+
+.containerCooling{
+	background: -webkit-gradient(linear, left top, left bottom, from(#5cb1f6), to(#0353e5));
+	border: 1px solid #004175;
+}
+
+.containerPlain{
+	background: -webkit-gradient(linear, left top, left bottom, from(#525354), to(#252a2e));
+	border: 1px solid #004175;
+}
+
+.deviceName{
+	font-weight: bold;
+	height: 30px;
+	font-size: 20px;
+	padding-top: 0px;
+	float: left;
+	padding-right: 10px;
+	margin-right: 10px;
+	padding-left: 5px;
+/*	text-shadow: 0px 1px 1px #fff;*/
+}
+
+.deviceNameWarming{
+	border-right: 1px solid red;
+}
+
+.deviceNameCooling{
+	border-right: 1px solid blue;
+}
+
+.deviceNamePlain{
+	border-right: 1px solid #AAAAAA;
+}
+
+.topContainerCooling{
+	border-bottom: 1px solid blue;
+}
+
+.topContainerWarming{
+	border-bottom: 1px solid red;/*#FF8C00;*/
+}
+
+.topContainerPlain{
+	border-bottom: 1px solid #AAAAAA;/*#FF8C00;*/
+}
+
+.targetTempWarming{
+	color: red;
+}
+
+.targetTempCooling{
+	color: blue;
+}
+
+.deviceQuickStats{
+	font-size: 12px;
+	padding-bottom: 5px;
+	height: 25px;
+}
+
+.bottomContainer{
+	padding: 5px;
+	height: 110px;
+}
+
+.quickStatsLeft{
+	float: left;
+	padding-right: 10px;
+}
+
+.quickStatsTemp{
+	float: right;
+}
+
+.current_temp{
+	font-size: 20px;
+	font-weight: bold;
+	vertical-align: top;
+	padding-left: 5px;
+}
+
+.current_humidity{
+	font-size: 20px;
+	font-weight: bold;
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 20px;
+}
+
+.current_fan{
+	font-size: 20px;
+	font-weight: bold;
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 20px;
+}
+
+.targetTempContainer{
+	width: 180px;
+	text-align: center;
+	float: right;
+	height: 86px;
+	border-radius: 8px;
+	background-color: #FFF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	border: 1px solid #CCCCCC;
+	padding: 8px;
+}
+
+.target_temp{
+	padding-top: 8px;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.target_eta{
+	font-size: 12px;
+}
+
+.latestEnergyContainer{
+	float: left;
+}
+
+.energyDayContainer{
+	height: 50px;
+	width: 95px;
+	text-align: center;
+	float: left;
+}
+
+.energyDate{
+	font-size: 12px;
+}
+
+.energyUsageHeat{
+	width: 80px;
+	height: 80px;
+}
+
+.usageImg{
+
+	background-color: white;
+	text-align: center;
+
+	border-radius: 8px;
+	background-color: #FFF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	border: 1px solid #CCCCCC;
+	padding: 8px;
+}
+
+.usageImgTitle{
+	font-size: 12px;
+}
+
+.structContainerLeft{
+	float: left;
+	padding-left: 20px;
+	padding-top: 5px;
+
+}
+
+.structContainerRight{
+	margin-left: 200px;
+}
+
+.structIcon{
+
+}
+
+.structName{
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.structLocation{
+	font-size: 14px;
+	text-align: center;
+}
+
+.structContainer{
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+}
+
+.weatherContainer{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.forecastContainer{
+	width: 660px;
+
+	/*background-color: white;
+	text-align: center;
+
+	
+	border-radius: 8px;
+	background-color: #FFF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	border: 1px solid #CCCCCC;
+	padding: 8px;*/
+	height: 200px;
+	margin-left: 210px;
+	
+}
+
+.dayContainer{
+
+	float: left;
+	width: 100px;
+	
+	text-align: center;
+	font-size: 12px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 25px;
+}
+
+.conditionContainer{
+	height: 130px;
+	background-color: white;
+
+	border-radius: 8px;
+	background-color: #FFF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	border: 1px solid #CCCCCC;
+	padding: 8px;
+}
+
+.conditionIcon{
+	height: 50px;
+	width: 60px;
+	margin-left: 11px;
+}
+
+.conditionTitle{
+	margin-top: 5px;
+	height: 50px;
+}
+
+.dayName{
+	margin-top: 10px;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.nowContainer{
+	float: left;
+	width: 160px;
+	margin-left: 7px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.nowConditionIcon{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nowConditionTitle{
+	margin-top: 5px;
+	height: 40px;
+}
+
+.nowName{
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.nowConditionContainer{
+	height: 170px;
+	background-color: white;
+
+	border-radius: 8px;
+	background-color: #FFF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	border: 1px solid #CCCCCC;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	padding-top: 0px;
+}

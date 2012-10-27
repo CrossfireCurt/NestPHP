@@ -1,0 +1,3 @@
+ALTER TABLE users
+   ALTER COLUMN is_deleted SET DEFAULT 0;
+ALTER TABLE users ADD COLUMN is_admin smallint NOT NULL DEFAULT 0;
